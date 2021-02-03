@@ -7,23 +7,22 @@ const assertEqual = function(actual, expected) {
 };
 
 const countLetters = function(str) {
-  let obj = {}
+  let obj = {};
 
   for (const letter of str) {
     if ((/[a-zA-Z]/).test(letter)) {
       if (obj[letter]) {
-        obj[letter] += 1
-      }
-      else {
-        obj[letter] = 1
+        obj[letter] += 1;
+      } else {
+        obj[letter] = 1;
       }
     }
   }
-  return obj
-}
+  return obj;
+};
 
-const result1 = countLetters("lighthouse in the house")
-console.log(countLetters("lighthouse in the house"))
+const result1 = countLetters("lighthouse in the house");
+console.log(countLetters("lighthouse in the house"));
 
-assertEqual(result1["l"], 1)
-assertEqual(result1["n"], 1)
+assertEqual(result1["l"], 1);
+assertEqual(result1["n"], 1);

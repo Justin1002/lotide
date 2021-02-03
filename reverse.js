@@ -13,4 +13,4 @@ const reverse = function(args) {
   return newStrings;
 };
 
-reverse(args)
+reverse(args);
