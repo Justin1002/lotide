@@ -1,14 +1,21 @@
 assertEqual = require('../assertEqual')
 tail = require('../tail')
+const assert = require('chai').assert;
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words);
-assertEqual(words.length, 3);
+describe("#tail", () => {
+  it ("returns an array of size two given an array of size 3", () => {
+    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    assert.strictEqual(result.length, 2)
+  });
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2); // ensure we get back two elements
-assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertEqual(result[1], "Labs"); // ensure second element is "Labs"
+  it ("returns 'lighthouse' as the first element in an array ['Hello','Lighthouse','Labs']", () => {
+    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    assert.strictEqual(result[0],"Lighthouse")
+  });
 
-const test = tail([1]);
-assertEqual(test.length, 0);
+  it ("returns 'labs' as the second element in an array ['Hello','Lighthouse','Labs']", () => {
+    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    assert.strictEqual(result[1],"Labs")
+  });
+
+});
