@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@justin1002/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "library similar to lodash with functions",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Justin1002/lotide.git"
   },
-  "author": "",
+  "author": "Justin Ly",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Justin1002/lotide/issues"
